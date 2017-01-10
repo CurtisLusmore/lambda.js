@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="app.js"></script>
+        <script src="editor.js"></script>
+    </head>
+    <body>
+        <code id="editor" contenteditable="true"></code>
+        <br />
+        <code id="output"></code>
+        <script>
+            const editor = document.getElementById('editor');
+            const output = document.getElementById('output');
+            makeEditor(editor, output);
+            editor.focus();
+        </script>
+    </body>
+</html>
